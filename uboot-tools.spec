@@ -2,7 +2,7 @@
 
 Name:      uboot-tools
 Version:   2016.05
-Release:   3%{?candidate:.%{candidate}}%{?dist}
+Release:   3%{?candidate:.%{candidate}}%{?dist}.pi1
 Summary:   U-Boot utilities
 
 Group:     Development/Tools
@@ -203,6 +203,9 @@ install -p -m 0644 tools/env/fw_env.config $RPM_BUILD_ROOT%{_sysconfdir}
 %endif
 
 %changelog
+* Fri Sep 02 2016 Lubomir Rintel <lkundrak@v3.sk> - 2016.05-3.pi1
+- Enable rpi board
+
 * Mon May 23 2016 Peter Robinson <pbrobinson@fedoraproject.org> 2016.05-3
 - Ship SPL for rockchips devices
 
