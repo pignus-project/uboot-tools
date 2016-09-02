@@ -2,7 +2,7 @@
 
 Name:      uboot-tools
 Version:   2017.05
-Release:   0.2%{?candidate:.%{candidate}}%{?dist}
+Release:   0.2%{?candidate:.%{candidate}}%{?dist}.pi1
 Summary:   U-Boot utilities
 
 Group:     Development/Tools
@@ -257,6 +257,9 @@ cp -p board/rockchip/evb_rk3399/README doc/README.evb_rk3399
 %endif
 
 %changelog
+* Sat Apr 08 2017 Lubomir Rintel <lkundrak@v3.sk> - 2017.05-0.2.rc1.pi1
+- Enable rpi board
+
 * Wed Apr  5 2017 Peter Robinson <pbrobinson@fedoraproject.org> 2017.05-0.2.rc1
 - Build am335x_evm
 
