@@ -2,7 +2,7 @@
 
 Name:      uboot-tools
 Version:   2016.09.01
-Release:   2%{?candidate:.%{candidate}}%{?dist}
+Release:   2%{?candidate:.%{candidate}}%{?dist}.pi1
 Summary:   U-Boot utilities
 
 Group:     Development/Tools
@@ -246,6 +246,9 @@ cp -p board/amlogic/odroid-c2/README doc/README.odroid-c2
 %endif
 
 %changelog
+* Thu Nov 17 2016 Lubomir Rintel <lkundrak@v3.sk> - 2016.09.01-2.pi1
+- Enable rpi board
+
 * Wed Oct 19 2016 Peter Robinson <pbrobinson@fedoraproject.org> 2016.09.01-2
 - Add upstream ext4 patches to fix 64 bit feature issues with u-boot and /boot
 
